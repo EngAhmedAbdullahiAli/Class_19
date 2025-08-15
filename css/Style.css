@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================================
+        starting common css
+   =======================================  */
+.Container {
+  width: 1320px;
+  margin: auto;
+}
+.box {
+  display: flex;
+  /* justify-content: space-between; */
+}
+a {
+  text-decoration: none;
+}
+/* =======================================
+        Ending common css
+   =======================================  */
+
+/* =======================================
+        starting nav bar section
+   ========================================== */
+nav {
+  background: #fae3b6;
+  padding: 50px 0px;
+}
+
+.Logo_party {
+  width: 20%;
+}
+.MenuBar_party {
+  width: 50%;
+}
+
+.button_party {
+  width: 30%;
+  text-align: right;
+}
+.btn_SignIn {
+  margin-right: 10px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 55px;
+  list-style: none;
+  height: 100%;
+  color: #050505;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: 3s;
+}
+
+.button_party a {
+  background: #fae3b6;
+  padding: 10px 25px;
+  border: 1px #908d8d solid;
+  border-radius: 10px;
+  color: #050505;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.button_party a:hover {
+  background: #fdbb57;
+}
+
+/* =======================================
+        Ending nav bar section
+   ========================================== */
+
+/* =======================================
+        Banner  section Starting
+   ========================================== */
+.banner {
+  background: #fae3b6;
+  padding: 100px 0px;
+}
+.banner .left {
+  width: 50%;
+}
+.banner .right {
+  width: 50%;
+}
+.banner .left h1 {
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  width: 535px;
+}
+.banner .left p {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  width: 531px;
+  margin-top: 30px;
+  margin-bottom: 76px;
+}
+.banner a {
+  background: black;
+  padding: 25px 91px;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.4s;
+  border: 1px solid transparent;
+}
+/* Note this line */
+.banner .Container .box .left a:hover {
+  background: transparent;
+  border-color: black;
+  color: #000;
+}
+
+/* =======================================
+         Banner  section Ending
+   ========================================== */
+
+/* =======================================
+         Collection  section starting
+   ========================================== */
+.Collection {
+  padding-top: 217px;
+}
+.Collection h2 {
+  font-size: 64px;
+  font-family: "Frank Ruhl Libre", serif;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+}
+.Collection .box {
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.Collection .collection_card {
+  width: 355px;
+  height: 402px;
+  border-radius: 20px;
+  background: red;
+  position: relative;
+  overflow: hidden;
+}
+
+.Collection .collection_card .overly {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 300px;
+  padding-left: 15px;
+  transition: 0.2s;
+}
+.Collection .collection_card img {
+  width: 100%;
+  height: 100%;
+}
+.Collection .collection_card a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  padding: 9px 108px;
+  border-radius: 20px;
+}
+.Collection .collection_card:hover .overly {
+  top: 0;
+}
+
+/* =======================================
+         Collection  section Ending
+   ========================================== */
+
+/* =======================================
+         Best   Section starting
+   ========================================== */
+.best .left {
+  width: 50%;
+  position: relative;
+}
+
+.best .left .secondImage {
+  position: absolute;
+  top: -89px;
+  right: -64px;
+  z-index: -1;
+}
+.best .right {
+  width: 50%;
+  padding-left: 128px;
+  padding-top: 78px;
+}
+.best {
+  padding-top: 266px;
+  padding-bottom: 336px;
+  position: relative;
+}
+.best .box {
+  position: relative;
+}
+.best h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #000000;
+  background: white;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.best .right p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+
+  font-family: "Frank Ruhl Libre", serif;
+  width: 443px;
+  padding-top: 60px;
+}
+.best .sells_detailes {
+  width: 800px;
+  background: #feecc8;
+  position: absolute;
+  right: 0px;
+  bottom: -217px;
+
+  padding: 73px 0px;
+  display: flex;
+  justify-content: space-around;
+
+  z-index: -1;
+}
+
+.best .sells_detailes h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Frank Ruhl Libre", serif;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.best .sells_detailes h2::after {
+  width: 2px;
+  height: 140px;
+  background: #000000;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+.best .sells_detailes .last-child h2::after {
+  width: 0px;
+}
+.best .sells_detailes p {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+/* =======================================
+         Best  section Ending
+   ========================================== */
+
+/* =======================================
+         Product  section Starting
+   ========================================== */
+   .product{
+    background: #CFA485;
+    padding-top: 31px;
+    padding-bottom: 190px;
+   }
+.product .left{
+  width: 42%;
+ 
+}
+.product .left h2{
+   font-size: 64px;
+  font-family: "Frank Ruhl Libre", serif;
+  color: white;
+  font-weight: 700;
+  width: 437px;
+}
+.product .left p{
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  width: 437px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.product .left a{
+background: black;
+  padding: 25px 91px;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.4s;
+  border: 1px solid transparent;
+}
+.product .left a:hover{
+background: transparent;
+  border-color: black;
+  color: #000;
+}
+.product .right{
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.product .right .card{
+  width: 366px; 
+  height: 550px;
+  background: white;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.product .right .card img{
+  display: block;
+}
+.product .right .card .card_detailes{
+  
+  width: 100%;
+  height: 127px;
+  padding-top: 15px;
+  padding-left: 22pxpx;
+
+}
+.product .right .card .card_detailes ul{
+  display: flex;
+  column-gap: 30px;
+}
+.product .right .card .card_detailes{
+  margin-left: 30px;
+}
+.product .right .card .card_detailes ul li i{
+  font-size: 16px;
+  color: #FDBB57;
+  
+  
+}
+.product .right .card .card_detailes ul li {
+  list-style: none;
+ 
+}
+.product .right .card .card_detailes h2{
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+ 
+}
+.product .right .card .card_detailes .box{
+  gap: 32px;
+}
+.product .right .card .card_detailes .box p{
+  font-size: 24px;
+  font-weight: 400;
+  color: #C4C4C4;
+  font-family: "Poppins", sans-serif;
+}
+.product .right .card .card_detailes .box p:last-child{
+  color: black;
+}
+
+
+/* =======================================
+         Product  section Ending
+   ========================================== */
+.footer {
+  background: #4d4a4a;
+  padding: 50px 0px;
+  color: white;
+}
+   
